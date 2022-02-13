@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#wrapper {
+    height: 100vh;
+    width: 80%;
+    margin: auto 10%;
+    background-color: rgba(102, 176, 228, 0.5);
+    padding: 2%;
+    border: black 2px solid;
+    display: flex;
+    flex-direction: column;
+    min-width: 1000px;
+}
+
+#header, #current-weather-info, #city-date-info, #hourly-block, #search-block {
+    display: flex;
+}
+
+#city-date-info, #header, #search-block {
+    justify-content: space-between;
+    align-items: center;
+}
+
+#current-weather-info, #hourly-block {
+    justify-content: space-evenly;
+    height: 80%;
+    font-size: 18px;
+}
+
+#hourly-weather-block, #current-weather-block {
+    margin-top: 5%;
+    background-color: whitesmoke;
+    flex-basis: 40%;
+    box-shadow: -5px 5px 5px black;
+    padding: 15px;
+}
+
+span, #hourly-block div {
+    text-align: center;
+}
+
+#current-weather-info div, #hourly-block div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgb(145, 238, 238);
+    padding: 5px;
+    flex: 1 1 0;
+    margin-left: 10px;
+    margin-right: 10px;
+}    
+
+#current-weather-info > div, #hourly-block > div {
+    border: black 2px solid;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+}
+
+#current-weather-info div {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+input, button {
+    height: 35px;
+    border-radius: 5%/15%;
+    padding: 3px;
+    font-size: 18px;
+}
+
+#current-info {
+    text-align: center;
+}
+
+button {
+    width: 35px;
+    background-image: url(../icons/search.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 30%/30%;
+
+}
+
+h2 {
+    color: whitesmoke;
+    text-shadow: 3px 3px 3px black;
+}
+
+h3, #date, #weather-status, #title, #current-day, .time {
+    font-weight: 700;
+}
+
+h3, #date {
+    color: rgb(55, 122, 89);
+    margin-bottom: 20px;
+}
+
+#current-temp-value {
+    font-size: 60px;
+    text-align: center;
+}
+
+.forecast-icon {
+    background-repeat: no-repeat;
+    background-size: auto contain;
+    background-position: center;
+}
+
+#forecast-icon {
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+}
+
+#weather-status {
+    font-size: 36px;
+}
+
+.popup__bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    opacity: 0; 
+    pointer-events: none; 
+    transition: 0.5s all;
+}
+
+.popup__bg.active { 
+    opacity: 1; 
+    pointer-events: all; 
+    transition: 0.5s all;
+}
+
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: rgb(145, 238, 238);
+    width: 60%;
+    height: 60vh;
+    margin: auto;
+    padding: 10%;
+    transition: 0.5s all;
+    text-align: center;
+    border: black 3px solid;
+    border-radius: 5%/10%;
+    font-size: 36px;
+}
+
+.popup.active {
+    transform: translate(-50%, -50%) scale(1);
+    transition: 0.5s all;
+}
+
+#error-title {
+    font-size: 60px;
+}
+
+.popup > p {
+    margin: 25px auto;
+}

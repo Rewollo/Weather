@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <h2> CURRENT WEATHER </h2>
+            <div id="search-block">
+                <input type="text" id="city-name" placeholder="Введите название города">
+                <button type="button" id="city-conf"></button>
+            </div>
+        </div>
+        <div id="current-weather-block">
+            <div id="city-date-info">
+                <h3 id="city_name"></h3>
+                <span id="date"></span>
+            </div>
+            <div id="current-weather-info">
+                <div id="current-weather">
+                    <div id="weather-status"></div>
+                    <div id="forecast-icon"></div>
+                </div>
+                <div id="current-temp">
+                    <div id="current-temp-value"></div>
+                </div>
+                <div id="current-info">
+                    <div id="min-temp"></div>
+                    <div id="max-temp"></div>
+                    <div id="wind-spd"></div>
+                </div>
+            </div>
+        </div>
+        <div id="hourly-weather-block">
+            <h3 id="title"> Hourly </h3>
+            <div id="hourly-block">
+                <div>
+                    <div id="current-day"></div>
+                    <div id="forecast-icon-empty"></div>
+                    <div id="forecast"> Forecast </div>
+                    <div id="temperature"> Temperature </div>
+                    <div id="wind"> Wind speed </div>
+                </div>
+                <div>
+                    <div id="time-1" class="time"></div>
+                    <div id="forecast-icon-1" class="forecast-icon"></div>
+                    <div id="forecast-1" class="forecast"></div>
+                    <div id="temperature-1" class="temperature"></div>
+                    <div id="wind-1" class="wind"></div>
+                </div>
+                <div>
+                    <div id="time-2" class="time"></div>
+                    <div id="forecast-icon-2" class="forecast-icon"></div>
+                    <div id="forecast-2" class="forecast"></div>
+                    <div id="temperature-2" class="temperature"></div>
+                    <div id="wind-2" class="wind"></div>
+                </div>
+                <div>
+                    <div id="time-3" class="time"></div>
+                    <div id="forecast-icon-3" class="forecast-icon"></div>
+                    <div id="forecast-3" class="forecast"></div>
+                    <div id="temperature-3" class="temperature"></div>
+                    <div id="wind-3" class="wind"></div>
+                </div>
+                <div>
+                    <div id="time-4" class="time"></div>
+                    <div id="forecast-icon-4" class="forecast-icon"></div>
+                    <div id="forecast-4" class="forecast"></div>
+                    <div id="temperature-4" class="temperature"></div>
+                    <div id="wind-4" class="wind"></div>
+                </div>
+                <div>
+                    <div id="time-5" class="time"></div>
+                    <div id="forecast-icon-5" class="forecast-icon"></div>
+                    <div id="forecast-5" class="forecast"></div>
+                    <div id="temperature-5" class="temperature"></div>
+                    <div id="wind-5" class="wind"></div>
+                </div>
+                <div>
+                    <div id="time-6" class="time"></div>
+                    <div id="forecast-icon-6" class="forecast-icon"></div>
+                    <div id="forecast-6" class="forecast"></div>
+                    <div id="temperature-6" class="temperature"></div>
+                    <div id="wind-6" class="wind"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup__bg"> 
+        <div class="popup">
+           <p id="error-title"> Oops, something's wrong. </p>
+           <p> You may have made a small mistake. </p>
+           <p> Please try again. </p>
+        </div>
+    </div>  
+
+    <script src="js/main.js"></script>
+</body>
+</html>
